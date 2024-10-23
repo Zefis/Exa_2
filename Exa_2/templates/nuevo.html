@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo producto</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='estilo.css')}}">
+</head>
+<body>
+    <div class="titu">
+        <h1 class="centrado">Nuevo Producto</h1>
+    </div>
+    
+    <form action="{{ url_for('nuevo') }}" method="POST">
+        <div class="container">
+            <div class="card">
+                Nombre Producto: <input type="text" name="nombre" required><br>
+                cantidad: <input type="number" name="cantidad"  required><br>
+                precio: <input type="number" name="precio" step="0.01" required><br>
+                fecha vencimiento: <input type="date" name="fecha_ven" required><br>
+            </div>
+            <div class="card">
+                <h2>Categoria </h2>
+                <input type="checkbox" name="categoria" value="ropa_accesorios"> ropa accesorios <br><br>
+                <input type="checkbox" name="categoria" value="bebidas_alimentos"> bebidas alimentos <br><br>
+                <input type="checkbox" name="categoria" value="salud_belleza"> salud belleza <br><br>
+                <input type="checkbox" name="categoria" value="juguetes_juegos"> juguetes juegos <br><br>
+
+            </div>
+        </div>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

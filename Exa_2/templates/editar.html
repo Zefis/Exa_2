@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='estilo.css')}}">
+</head>
+<body>
+    <div class="titu">
+        <h1 class="centrado">Editar Producto</h1>
+    </div>
+    
+    <!-- Corregí la sintaxis y pasé el id en url_for -->
+    <form action="{{ url_for('editar', id=producto['id']) }}" method="POST">
+        <div class="container">
+            <div class="card">
+                <h2>Datos Producto</h2>
+                Nombre: <input type="text" name="nombre" value="{{ producto['nombre'] }}" required><br>
+                Cantidad: <input type="number" name="cantidad" value="{{ producto['cantidad'] }}" required><br>
+                Precio: <input type="number" name="precio" value="{{ producto['precio'] }}" step="0.01" required><br>
+                Fecha vencimiento: <input type="date" name="fecha_ven" value="{{ producto['fecha_ven'] }}" required><br>
+            </div>
+
+            <div class="card">
+                <h2>Categoria Productos</h2>
+                <label>categoria:</label><br>
+                <input type="checkbox" name="categoria" value="ropa_accesorios" {% if 'ropa_accesorios' in producto['categoria'] %}checked{% endif %}>ropa accesorios <br>
+                <input type="checkbox" name="categoria" value="bebidas_alimentos" {% if 'bebidas_alimentos' in producto['categoria'] %}checked{% endif %}> bebidas alimentos <br>
+                <input type="checkbox" name="categoria" value="salud_belleza" {% if 'salud_belleza' in producto['categoria'] %}checked{% endif %}> salud belleza<br>
+                <input type="checkbox" name="categoria" value="juguetes_juegos" {% if 'juguetes_juegos' in producto['categoria'] %}checked{% endif %}> juguetes juegos <br>
+            </div>
+        </div>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>

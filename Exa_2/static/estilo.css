@@ -1,0 +1,222 @@
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9; 
+        }
+
+        h1 {
+            color: #333; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px; /* Mínimo ancho para tarjetas */
+        }
+
+        input[type="text"], 
+        input[type="number"], 
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #454a53; 
+            color: white; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; 
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+                body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9; 
+        }
+
+        h1 {
+            color: #333; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px; /* Mínimo ancho para tarjetas */
+        }
+        .titu {
+            background-color: rgb(190, 230, 226);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px; /* Mínimo ancho para tarjetas */
+        }
+
+        input[type="text"], 
+        input[type="number"], 
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #454a53; 
+            color: white; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; 
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9; 
+        }
+        
+        h1 {
+            color: #333; 
+        }
+        .centrado {
+            text-align: center;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #454a53; 
+            color: white; 
+            border: none;
+            border-radius: 5px; 
+            font-size: 16px; 
+            transition: background-color 0.3s;  
+        }
+        
+        a:hover {
+            text-decoration: underline; 
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #454a53; 
+            color: white; 
+            border: none;
+            border-radius: 5px; 
+            font-size: 16px; 
+            transition: background-color 0.3s; 
+        }
+        
+        .button:hover {
+            background-color: #0056b3; 
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #6c757d; 
+            color: white; 
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #ffffff; 
+        }
+        
+        tr:hover {
+            background-color: #d9e7ff; 
+        }
+        
+        ul {
+            padding-left: 20px; 
+        }
+        
+        .edit-link, .delete-button {
+            text-decoration: none; 
+            color: white; 
+            padding: 8px 15px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+        
+        
+        .edit-link {
+            background-color: #007BFF; 
+        }
+        
+        .edit-link:hover {
+            background-color: #0056b3; 
+        }
+        
+        
+        .delete-button {
+            background-color: #dc3545; 
+            border: none; 
+        }
+        
+        .delete-button:hover {
+            background-color: #c82333; 
+        }
+        
